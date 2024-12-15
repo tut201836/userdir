@@ -1,0 +1,22 @@
+world:
+  World:
+    name: World
+  Simulator:
+     type: 'AISTSimulator'
+     name: 'AISTSim'
+  GLVision:
+  Camera:
+    lookEye: [0., 3., 1.7]
+    lookUp: [0., 0., 1.0]
+    lookAtCenter: [0., 0., 0.7]
+
+objects:
+  -
+    model: 'step_floor.body'
+    name: 'StepFloor'
+    fix: True
+# export SPRING_CUSTOMIZER_ROBOT=step_floor
+# export SPRING_CUSTOMIZER_CONF_FILE=$(pwd)/SpringCustomizerSettings.yaml
+# jupyter console --kernel=choreonoid
+# exec(open('/choreonoid_ws/install/share/irsl_choreonoid/sample/irsl_import.py').read())
+# SetupCnoid.setCnoidFromYaml('step_world.yaml')

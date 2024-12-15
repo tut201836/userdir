@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cnoid_spring_customizer</name>
+  <version>0.0.0</version>
+  <description>General customizer for handling joints as spring-dumper model</description>
+
+  <maintainer email="faculty@irsl.eiiris.tut.ac.jp">IRSL faculty</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>cmake</buildtool_depend>
+</package>

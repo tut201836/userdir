@@ -1,0 +1,282 @@
+CoMTask:
+  activeJoints: [
+  "Root",
+  "LLEG_JOINT0", "LLEG_JOINT1", "LLEG_JOINT2", "LLEG_JOINT3", "LLEG_JOINT4", "LLEG_JOINT5", 
+  "RLEG_JOINT0", "RLEG_JOINT1", "RLEG_JOINT2", "RLEG_JOINT3", "RLEG_JOINT4", "RLEG_JOINT5"]
+
+BaseOrientationTask:
+  frame: BODY
+
+FootManager:
+  footstepDuration: 2.0 # [sec] 歩行速度を下げるために歩行時間を増加
+  doubleSupportRatio: 0.3 # [] 二重支持期を延長
+  deltaTransLimit: [0.2, 0.05, 7.5]
+  impedanceGains:
+    SingleSupport:
+      spring:
+        linear: [2250, 2250, 450] # Weaken Z-component spring to avoid a too fast recovery for mass errors
+
+CentroidalManager:
+  useActualStateForMpc: true
+  enableZmpFeedback: false
+  useTargetPoseForControlRobotAnchorFrame: true
+  useActualComForWrenchDist: false
+  # enableComZFeedback: false
+  dcmGainP: 1.5 # 安定性を持たせるために少し低めに調整
+  comZGainP: 20000.0
+  zmpVelGain: 0.02
+  refComZ: 0.7039 # [m]
+  method: PreviewControlZmp
+  horizonDuration: 2.0 # [sec]
+  horizonDt: 0.002 # [sec]
+  # method: IntrinsicallyStableMpc
+  # horizonDuration: 2.0 # [sec]
+  # horizonDt: 0.02 # [sec]
+
+transitions:
+  - [BWC::Initial_, OK, BWC::ConfigWalk_, Auto]
+
+states:
+  BWC::Initial_:
+    base: BWC::Initial
+    configs:
+      autoStartTime: 2.0
+
+  BWC::ConfigWalk_:
+    base: BWC::ConfigWalk
+    configs:
+      footstepList:
+        - foot: Left
+          footMidpose:
+            translation: [0.3, 0.0, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+        
+        - foot: Right
+          footMidpose:
+            translation: [0.3, -0.1, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+        
+        - foot: Left
+          footMidpose:
+            translation: [0.6, 0.0, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+        
+        - foot: Right
+          footMidpose:
+            translation: [0.6, -0.1, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+        
+        - foot: Left
+          footMidpose:
+            translation: [0.9, 0.0, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+        
+        - foot: Right
+          footMidpose:
+            translation: [0.9, -0.1, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        # 20歩の追加
+        - foot: Left
+          footMidpose:
+            translation: [1.2, 0.0, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Right
+          footMidpose:
+            translation: [1.2, -0.1, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Left
+          footMidpose:
+            translation: [1.5, 0.0, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Right
+          footMidpose:
+            translation: [1.5, -0.1, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Left
+          footMidpose:
+            translation: [1.8, 0.0, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Right
+          footMidpose:
+            translation: [1.8, -0.1, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Left
+          footMidpose:
+            translation: [2.1, 0.0, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Right
+          footMidpose:
+            translation: [2.1, -0.1, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Left
+          footMidpose:
+            translation: [2.4, 0.0, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Right
+          footMidpose:
+            translation: [2.4, -0.1, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Left
+          footMidpose:
+            translation: [2.7, 0.0, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Right
+          footMidpose:
+            translation: [2.7, -0.1, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Left
+          footMidpose:
+            translation: [3.0, 0.0, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Right
+          footMidpose:
+            translation: [3.0, -0.1, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Left
+          footMidpose:
+            translation: [3.3, 0.0, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Right
+          footMidpose:
+            translation: [3.3, -0.1, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Left
+          footMidpose:
+            translation: [3.6, 0.0, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Right
+          footMidpose:
+            translation: [3.6, -0.1, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Left
+          footMidpose:
+            translation: [3.9, 0.0, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]
+
+        - foot: Right
+          footMidpose:
+            translation: [3.9, -0.1, 0.0]
+          swingTrajConfig:
+            type: CubicSplineSimple
+            withdrawOffset: [0, 0, 0.08]
+            approachOffset: [0, 0, 0.05]
+            swingOffset: [0, 0, 0.08]

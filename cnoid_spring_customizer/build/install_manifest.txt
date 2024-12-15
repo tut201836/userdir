@@ -1,0 +1,1 @@
+/mc_rtc_ws/install/lib/choreonoid-2.0/customizer/IRSL_SpringCustomizer.so

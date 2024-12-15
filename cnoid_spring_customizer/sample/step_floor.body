@@ -1,0 +1,3650 @@
+format: ChoreonoidBody
+format_version: 2.0
+angle_unit: degree
+name: step_floor
+root_link: Base
+links:
+- name: Base
+  elements:
+  - type: Transform
+    elements:
+    - type: Transform
+      translation:
+      - -2.3
+      - 0
+      - -0.05
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0.14
+            - 0
+            - 0.35
+            emissive:
+            - 0.06
+            - 0
+            - 0.15
+        geometry:
+          type: Box
+          size:
+          - 5
+          - 10
+          - 0.1
+  joint_name: Base
+  joint_type: free
+  mass: 5000
+  center_of_mass:
+  - -2.5
+  - 0
+  - -0.05
+  inertia:
+  - 41670.8
+  - 0
+  - 0
+  - 0
+  - 10420.8
+  - 0
+  - 0
+  - 0
+  - 10833.3
+- name: joint0_0
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - 0.1
+    - 0.0
+    - -0.75
+    elements:
+    - type: Transform
+      translation:
+      - 0.3
+      - 0
+      - -0.15
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 0.0
+  - 0
+  - 0.0
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint0_0
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 0
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 1.0
+  - 0.0
+  - -0.75
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint0_1
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - 0.1
+    - 0.0
+    - -0.44
+    elements:
+    - type: Transform
+      translation:
+      - 0.3
+      - 0
+      - -0.44999999999999996
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 0.0
+  - 0
+  - 0.3
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint0_1
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 0
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 1.0
+  - 0.0
+  - -0.45
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint0_2
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - 0.1
+    - 0.0
+    - -0.13
+    elements:
+    - type: Transform
+      translation:
+      - 0.3
+      - 0
+      - -0.75
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 0.0
+  - 0
+  - 0.6
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint0_2
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 0
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 1.0
+  - 0.0
+  - -0.15000000000000002
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint0_3
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - 0.1
+    - 0.0
+    - 0.17999999999999994
+    elements:
+    - type: Transform
+      translation:
+      - 0.3
+      - 0
+      - -1.0499999999999998
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 0.0
+  - 0
+  - 0.8999999999999999
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint0_3
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 0
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 1.0
+  - 0.0
+  - 0.1499999999999999
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint0_4
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - 0.1
+    - -0.0
+    - 0.49
+    elements:
+    - type: Transform
+      translation:
+      - 0.3
+      - 0
+      - -1.3499999999999999
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 0.0
+  - 0
+  - 1.2
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint0_4
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 0
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 1.0
+  - -0.0
+  - 0.44999999999999996
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint1_0
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -0.41000000000000003
+    - 0.0
+    - -0.75
+    elements:
+    - type: Transform
+      translation:
+      - 0.6
+      - 0
+      - -0.15
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 0.5
+  - 0
+  - 0.0
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint1_0
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 1
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 0.5
+  - 0.0
+  - -0.75
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint1_1
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -0.41000000000000003
+    - 0.0
+    - -0.44
+    elements:
+    - type: Transform
+      translation:
+      - 0.6
+      - 0
+      - -0.44999999999999996
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 0.5
+  - 0
+  - 0.3
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint1_1
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 1
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 0.5
+  - 0.0
+  - -0.45
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint1_2
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -0.41000000000000003
+    - 0.0
+    - -0.13
+    elements:
+    - type: Transform
+      translation:
+      - 0.6
+      - 0
+      - -0.75
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 0.5
+  - 0
+  - 0.6
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint1_2
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 1
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 0.5
+  - 0.0
+  - -0.15000000000000002
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint1_3
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -0.41000000000000003
+    - 0.0
+    - 0.17999999999999994
+    elements:
+    - type: Transform
+      translation:
+      - 0.6
+      - 0
+      - -1.0499999999999998
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 0.5
+  - 0
+  - 0.8999999999999999
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint1_3
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 1
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 0.5
+  - 0.0
+  - 0.1499999999999999
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint1_4
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -0.41000000000000003
+    - -0.0
+    - 0.49
+    elements:
+    - type: Transform
+      translation:
+      - 0.6
+      - 0
+      - -1.3499999999999999
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 0.5
+  - 0
+  - 1.2
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint1_4
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 1
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 0.5
+  - -0.0
+  - 0.44999999999999996
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint2_0
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -0.92
+    - 0.0
+    - -0.75
+    elements:
+    - type: Transform
+      translation:
+      - 0.8999999999999999
+      - 0
+      - -0.15
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 1.0
+  - 0
+  - 0.0
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint2_0
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 2
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 0.0
+  - 0.0
+  - -0.75
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint2_1
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -0.92
+    - 0.0
+    - -0.44
+    elements:
+    - type: Transform
+      translation:
+      - 0.8999999999999999
+      - 0
+      - -0.44999999999999996
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 1.0
+  - 0
+  - 0.3
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint2_1
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 2
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 0.0
+  - 0.0
+  - -0.45
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint2_2
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -0.92
+    - 0.0
+    - -0.13
+    elements:
+    - type: Transform
+      translation:
+      - 0.8999999999999999
+      - 0
+      - -0.75
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 1.0
+  - 0
+  - 0.6
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint2_2
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 2
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 0.0
+  - 0.0
+  - -0.15000000000000002
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint2_3
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -0.92
+    - 0.0
+    - 0.17999999999999994
+    elements:
+    - type: Transform
+      translation:
+      - 0.8999999999999999
+      - 0
+      - -1.0499999999999998
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 1.0
+  - 0
+  - 0.8999999999999999
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint2_3
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 2
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 0.0
+  - 0.0
+  - 0.1499999999999999
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint2_4
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -0.92
+    - -0.0
+    - 0.49
+    elements:
+    - type: Transform
+      translation:
+      - 0.8999999999999999
+      - 0
+      - -1.3499999999999999
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 1.0
+  - 0
+  - 1.2
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint2_4
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 2
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - 0.0
+  - -0.0
+  - 0.44999999999999996
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint3_0
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -1.43
+    - 0.0
+    - -0.75
+    elements:
+    - type: Transform
+      translation:
+      - 1.2
+      - 0
+      - -0.15
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 1.5
+  - 0
+  - 0.0
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint3_0
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 3
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -0.5
+  - 0.0
+  - -0.75
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint3_1
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -1.43
+    - 0.0
+    - -0.44
+    elements:
+    - type: Transform
+      translation:
+      - 1.2
+      - 0
+      - -0.44999999999999996
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 1.5
+  - 0
+  - 0.3
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint3_1
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 3
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -0.5
+  - 0.0
+  - -0.45
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint3_2
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -1.43
+    - 0.0
+    - -0.13
+    elements:
+    - type: Transform
+      translation:
+      - 1.2
+      - 0
+      - -0.75
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 1.5
+  - 0
+  - 0.6
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint3_2
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 3
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -0.5
+  - 0.0
+  - -0.15000000000000002
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint3_3
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -1.43
+    - 0.0
+    - 0.17999999999999994
+    elements:
+    - type: Transform
+      translation:
+      - 1.2
+      - 0
+      - -1.0499999999999998
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 1.5
+  - 0
+  - 0.8999999999999999
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint3_3
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 3
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -0.5
+  - 0.0
+  - 0.1499999999999999
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint3_4
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -1.43
+    - -0.0
+    - 0.49
+    elements:
+    - type: Transform
+      translation:
+      - 1.2
+      - 0
+      - -1.3499999999999999
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 1.5
+  - 0
+  - 1.2
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint3_4
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 3
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -0.5
+  - -0.0
+  - 0.44999999999999996
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint4_0
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -1.94
+    - 0.0
+    - -0.75
+    elements:
+    - type: Transform
+      translation:
+      - 1.5
+      - 0
+      - -0.15
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 2.0
+  - 0
+  - 0.0
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint4_0
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 4
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -1.0
+  - 0.0
+  - -0.75
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint4_1
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -1.94
+    - 0.0
+    - -0.44
+    elements:
+    - type: Transform
+      translation:
+      - 1.5
+      - 0
+      - -0.44999999999999996
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 2.0
+  - 0
+  - 0.3
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint4_1
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 4
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -1.0
+  - 0.0
+  - -0.45
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint4_2
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -1.94
+    - 0.0
+    - -0.13
+    elements:
+    - type: Transform
+      translation:
+      - 1.5
+      - 0
+      - -0.75
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 2.0
+  - 0
+  - 0.6
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint4_2
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 4
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -1.0
+  - 0.0
+  - -0.15000000000000002
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint4_3
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -1.94
+    - 0.0
+    - 0.17999999999999994
+    elements:
+    - type: Transform
+      translation:
+      - 1.5
+      - 0
+      - -1.0499999999999998
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 2.0
+  - 0
+  - 0.8999999999999999
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint4_3
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 4
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -1.0
+  - 0.0
+  - 0.1499999999999999
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint4_4
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -1.94
+    - -0.0
+    - 0.49
+    elements:
+    - type: Transform
+      translation:
+      - 1.5
+      - 0
+      - -1.3499999999999999
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 2.0
+  - 0
+  - 1.2
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint4_4
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 4
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -1.0
+  - -0.0
+  - 0.44999999999999996
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint5_0
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -2.4499999999999997
+    - 0.0
+    - -0.75
+    elements:
+    - type: Transform
+      translation:
+      - 1.8
+      - 0
+      - -0.15
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 2.5
+  - 0
+  - 0.0
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint5_0
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 5
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -1.5
+  - 0.0
+  - -0.75
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint5_1
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -2.4499999999999997
+    - 0.0
+    - -0.44
+    elements:
+    - type: Transform
+      translation:
+      - 1.8
+      - 0
+      - -0.44999999999999996
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 2.5
+  - 0
+  - 0.3
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint5_1
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 5
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -1.5
+  - 0.0
+  - -0.45
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint5_2
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -2.4499999999999997
+    - 0.0
+    - -0.13
+    elements:
+    - type: Transform
+      translation:
+      - 1.8
+      - 0
+      - -0.75
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 2.5
+  - 0
+  - 0.6
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint5_2
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 5
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -1.5
+  - 0.0
+  - -0.15000000000000002
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint5_3
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -2.4499999999999997
+    - 0.0
+    - 0.17999999999999994
+    elements:
+    - type: Transform
+      translation:
+      - 1.8
+      - 0
+      - -1.0499999999999998
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 2.5
+  - 0
+  - 0.8999999999999999
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint5_3
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 5
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -1.5
+  - 0.0
+  - 0.1499999999999999
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint5_4
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -2.4499999999999997
+    - -0.0
+    - 0.49
+    elements:
+    - type: Transform
+      translation:
+      - 1.8
+      - 0
+      - -1.3499999999999999
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 2.5
+  - 0
+  - 1.2
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint5_4
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 5
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -1.5
+  - -0.0
+  - 0.44999999999999996
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint6_0
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -2.96
+    - 0.0
+    - -0.75
+    elements:
+    - type: Transform
+      translation:
+      - 2.0999999999999996
+      - 0
+      - -0.15
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 3.0
+  - 0
+  - 0.0
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint6_0
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 6
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -2.0
+  - 0.0
+  - -0.75
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint6_1
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -2.96
+    - 0.0
+    - -0.44
+    elements:
+    - type: Transform
+      translation:
+      - 2.0999999999999996
+      - 0
+      - -0.44999999999999996
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 3.0
+  - 0
+  - 0.3
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint6_1
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 6
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -2.0
+  - 0.0
+  - -0.45
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint6_2
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -2.96
+    - 0.0
+    - -0.13
+    elements:
+    - type: Transform
+      translation:
+      - 2.0999999999999996
+      - 0
+      - -0.75
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 3.0
+  - 0
+  - 0.6
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint6_2
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 6
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -2.0
+  - 0.0
+  - -0.15000000000000002
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint6_3
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -2.96
+    - 0.0
+    - 0.17999999999999994
+    elements:
+    - type: Transform
+      translation:
+      - 2.0999999999999996
+      - 0
+      - -1.0499999999999998
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 3.0
+  - 0
+  - 0.8999999999999999
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint6_3
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 6
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -2.0
+  - 0.0
+  - 0.1499999999999999
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint6_4
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -2.96
+    - -0.0
+    - 0.49
+    elements:
+    - type: Transform
+      translation:
+      - 2.0999999999999996
+      - 0
+      - -1.3499999999999999
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 3.0
+  - 0
+  - 1.2
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint6_4
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 6
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -2.0
+  - -0.0
+  - 0.44999999999999996
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint7_0
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -3.47
+    - -0.0
+    - -0.75
+    elements:
+    - type: Transform
+      translation:
+      - 2.4
+      - 0
+      - -0.15
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 3.5
+  - 0
+  - 0.0
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint7_0
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 7
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -2.5
+  - -0.0
+  - -0.75
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint7_1
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -3.47
+    - -0.0
+    - -0.44
+    elements:
+    - type: Transform
+      translation:
+      - 2.4
+      - 0
+      - -0.44999999999999996
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 3.5
+  - 0
+  - 0.3
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint7_1
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 7
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -2.5
+  - -0.0
+  - -0.45
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint7_2
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -3.47
+    - -0.0
+    - -0.13
+    elements:
+    - type: Transform
+      translation:
+      - 2.4
+      - 0
+      - -0.75
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 3.5
+  - 0
+  - 0.6
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint7_2
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 7
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -2.5
+  - -0.0
+  - -0.15000000000000002
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint7_3
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -3.47
+    - -0.0
+    - 0.17999999999999994
+    elements:
+    - type: Transform
+      translation:
+      - 2.4
+      - 0
+      - -1.0499999999999998
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 3.5
+  - 0
+  - 0.8999999999999999
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint7_3
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 7
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -2.5
+  - -0.0
+  - 0.1499999999999999
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint7_4
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -3.47
+    - 0.0
+    - 0.49
+    elements:
+    - type: Transform
+      translation:
+      - 2.4
+      - 0
+      - -1.3499999999999999
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 3.5
+  - 0
+  - 1.2
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint7_4
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 7
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -2.5
+  - 0.0
+  - 0.44999999999999996
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint8_0
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -3.98
+    - -0.0
+    - -0.75
+    elements:
+    - type: Transform
+      translation:
+      - 2.6999999999999997
+      - 0
+      - -0.15
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 4.0
+  - 0
+  - 0.0
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint8_0
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 8
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -3.0
+  - -0.0
+  - -0.75
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint8_1
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -3.98
+    - -0.0
+    - -0.44
+    elements:
+    - type: Transform
+      translation:
+      - 2.6999999999999997
+      - 0
+      - -0.44999999999999996
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 4.0
+  - 0
+  - 0.3
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint8_1
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 8
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -3.0
+  - -0.0
+  - -0.45
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint8_2
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -3.98
+    - -0.0
+    - -0.13
+    elements:
+    - type: Transform
+      translation:
+      - 2.6999999999999997
+      - 0
+      - -0.75
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 4.0
+  - 0
+  - 0.6
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint8_2
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 8
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -3.0
+  - -0.0
+  - -0.15000000000000002
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint8_3
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -3.98
+    - -0.0
+    - 0.17999999999999994
+    elements:
+    - type: Transform
+      translation:
+      - 2.6999999999999997
+      - 0
+      - -1.0499999999999998
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 4.0
+  - 0
+  - 0.8999999999999999
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint8_3
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 8
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -3.0
+  - -0.0
+  - 0.1499999999999999
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint8_4
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -3.98
+    - 0.0
+    - 0.49
+    elements:
+    - type: Transform
+      translation:
+      - 2.6999999999999997
+      - 0
+      - -1.3499999999999999
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 4.0
+  - 0
+  - 1.2
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint8_4
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 8
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -3.0
+  - 0.0
+  - 0.44999999999999996
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint9_0
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -4.49
+    - -0.0
+    - -0.75
+    elements:
+    - type: Transform
+      translation:
+      - 2.9999999999999996
+      - 0
+      - -0.15
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 4.5
+  - 0
+  - 0.0
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint9_0
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 9
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -3.5
+  - -0.0
+  - -0.75
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint9_1
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -4.49
+    - -0.0
+    - -0.44
+    elements:
+    - type: Transform
+      translation:
+      - 2.9999999999999996
+      - 0
+      - -0.44999999999999996
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 4.5
+  - 0
+  - 0.3
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint9_1
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 9
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -3.5
+  - -0.0
+  - -0.45
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint9_2
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -4.49
+    - -0.0
+    - -0.13
+    elements:
+    - type: Transform
+      translation:
+      - 2.9999999999999996
+      - 0
+      - -0.75
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 4.5
+  - 0
+  - 0.6
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint9_2
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 9
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -3.5
+  - -0.0
+  - -0.15000000000000002
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint9_3
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -4.49
+    - -0.0
+    - 0.17999999999999994
+    elements:
+    - type: Transform
+      translation:
+      - 2.9999999999999996
+      - 0
+      - -1.0499999999999998
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0.49
+            - 0.49
+            emissive:
+            - 0
+            - 0.21
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 4.5
+  - 0
+  - 0.8999999999999999
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint9_3
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 9
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -3.5
+  - -0.0
+  - 0.1499999999999999
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
+- name: joint9_4
+  elements:
+  - type: Transform
+    rotation:
+    - -1
+    - 0
+    - 0
+    - 90
+    translation:
+    - -4.49
+    - 0.0
+    - 0.49
+    elements:
+    - type: Transform
+      translation:
+      - 2.9999999999999996
+      - 0
+      - -1.3499999999999999
+      elements:
+      - type: Shape
+        appearance:
+          material:
+            diffuse:
+            - 0
+            - 0
+            - 0.49
+            emissive:
+            - 0
+            - 0
+            - 0.21
+        geometry:
+          type: Box
+          size:
+          - 0.3
+          - 0.3
+          - 0.3
+  parent: Base
+  translation:
+  - 4.5
+  - 0
+  - 1.2
+  rotation:
+  - 1
+  - 0
+  - 0
+  - 90
+  joint_name: joint9_4
+  joint_type: prismatic
+  joint_axis:
+  - 0
+  - 1
+  - 0
+  joint_id: 9
+  joint_range:
+  - -0.1
+  - 0.1
+  joint_axis_inertia: 1
+  mass: 0.005
+  center_of_mass:
+  - -3.5
+  - 0.0
+  - 0.44999999999999996
+  inertia:
+  - 0.0420833
+  - 0
+  - 0
+  - 0
+  - 0.00427083
+  - -8.32667e-19
+  - 0
+  - -8.32667e-19
+  - 0.000520833
